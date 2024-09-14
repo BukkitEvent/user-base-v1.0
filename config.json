@@ -1,4 +1,8 @@
 {
     "token": "token",
-    "application_id": "id"
+    "application_id": "id",
+    "colors": {
+        "primary": "0xDDA0DD",
+        "error"  : "0xFF0000"
+    }
 }
