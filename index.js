@@ -9,7 +9,7 @@ client.commands = new Map()
 
 require('./modules/deploy')(client)
 
-client.login(config.token)
+client.login(process?.env?.token ?? config.token)
 
 process.on('uncaughtException', (err) => {
     console.log(`[userbase/v1.0] [${err.name}] ${err.stack}`)

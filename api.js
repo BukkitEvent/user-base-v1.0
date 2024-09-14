@@ -7,7 +7,7 @@ async function request(endpoint, options) {
 		
     const res = await fetch(url, {
     	headers: {
-    		Authorization: `Bot ${config.token}`,
+    		Authorization: `Bot ${process?.env?.token ?? config.token}`,
         	'Content-Type': 'application/json charset=UTF-8',
         	'User-Agent': 'UserBase/v1.0'
       	},
